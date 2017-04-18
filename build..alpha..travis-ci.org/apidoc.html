@@ -1,0 +1,1302 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="http://fokkezb.nl/tag/tiny"
+
+    >tn (v4.2.0)</a>
+</h1>
+<h4>Appcelerator & Titanium CLI wrapper to save you keystrokes.</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.tn">module tn</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.tn.parse">
+            function <span class="apidocSignatureSpan">tn.</span>parse
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">tn.</span>kitchen</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">tn.</span>logger</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">tn.</span>main</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">tn.</span>recipes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">tn.</span>setup</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">tn.</span>utils</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.tn.kitchen">module tn.kitchen</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.tn.kitchen.confirm">
+            function <span class="apidocSignatureSpan">tn.kitchen.</span>confirm
+            <span class="apidocSignatureSpan">(tray, eat)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.tn.kitchen.cook">
+            function <span class="apidocSignatureSpan">tn.kitchen.</span>cook
+            <span class="apidocSignatureSpan">(ingr, opts)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.tn.logger">module tn.logger</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.tn.logger.debug">
+            function <span class="apidocSignatureSpan">tn.logger.</span>debug
+            <span class="apidocSignatureSpan">(msg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.tn.logger.error">
+            function <span class="apidocSignatureSpan">tn.logger.</span>error
+            <span class="apidocSignatureSpan">(msg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.tn.logger.info">
+            function <span class="apidocSignatureSpan">tn.logger.</span>info
+            <span class="apidocSignatureSpan">(msg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.tn.logger.ok">
+            function <span class="apidocSignatureSpan">tn.logger.</span>ok
+            <span class="apidocSignatureSpan">(msg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.tn.logger.trace">
+            function <span class="apidocSignatureSpan">tn.logger.</span>trace
+            <span class="apidocSignatureSpan">(msg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.tn.logger.warn">
+            function <span class="apidocSignatureSpan">tn.logger.</span>warn
+            <span class="apidocSignatureSpan">(msg)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.tn.main">module tn.main</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.tn.main.parse">
+            function <span class="apidocSignatureSpan">tn.main.</span>parse
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.tn.parse">module tn.parse</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.tn.parse.parse">
+            function <span class="apidocSignatureSpan">tn.</span>parse
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.tn.recipes">module tn.recipes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.tn.recipes.get">
+            function <span class="apidocSignatureSpan">tn.recipes.</span>get
+            <span class="apidocSignatureSpan">(name, ingredient)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.tn.recipes.has">
+            function <span class="apidocSignatureSpan">tn.recipes.</span>has
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.tn.recipes.list">
+            function <span class="apidocSignatureSpan">tn.recipes.</span>list
+            <span class="apidocSignatureSpan">(forReadMe)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.tn.recipes.remove">
+            function <span class="apidocSignatureSpan">tn.recipes.</span>remove
+            <span class="apidocSignatureSpan">(recipe, location)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.tn.recipes.rename">
+            function <span class="apidocSignatureSpan">tn.recipes.</span>rename
+            <span class="apidocSignatureSpan">(oldRecipe, newRecipe, location)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.tn.recipes.reset">
+            function <span class="apidocSignatureSpan">tn.recipes.</span>reset
+            <span class="apidocSignatureSpan">(location)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.tn.recipes.save">
+            function <span class="apidocSignatureSpan">tn.recipes.</span>save
+            <span class="apidocSignatureSpan">(recipe, args, location)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.tn.setup">module tn.setup</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.tn.setup.generate">
+            function <span class="apidocSignatureSpan">tn.setup.</span>generate
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.tn.setup.uninstall">
+            function <span class="apidocSignatureSpan">tn.setup.</span>uninstall
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.tn.utils">module tn.utils</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.tn.utils.join">
+            function <span class="apidocSignatureSpan">tn.utils.</span>join
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.tn" id="apidoc.module.tn">module tn</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.tn.parse" id="apidoc.element.tn.parse">
+        function <span class="apidocSignatureSpan">tn.</span>parse
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">parse = function (args) {
+	var tray;
+
+	tray = kitchen.cook(args);
+
+	return tray ? tray.dinner : args;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    if (error) {
+      logger.error(&#x27;Failed to read Titanium info: &#x27; + JSON.stringify([error, stderr]));
+
+    } else {
+
+      console.log();
+
+      var config = JSON.<span class="apidocCodeKeywordSpan">parse</span>(stdout);
+
+      if (config.android) {
+
+        if (config.android.emulators &#x26;&#x26; config.android.emulators.length &#x3e; 0) {
+
+config.android.emulators.forEach(function forEach(dev) {
+  var name = dev.name.toLowerCase().replace(/\.+/g, &#x27;&#x27;).replace(/[^a-z0-9]+/g, &#x27;-&#x27;);
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.tn.kitchen" id="apidoc.module.tn.kitchen">module tn.kitchen</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.tn.kitchen.confirm" id="apidoc.element.tn.kitchen.confirm">
+        function <span class="apidocSignatureSpan">tn.kitchen.</span>confirm
+        <span class="apidocSignatureSpan">(tray, eat)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function confirm(tray, eat) {
+
+  fields.select({
+    title: &#x27;What would you like me to do?&#x27;,
+    numbered: true,
+    default: 1,
+    options: [{
+      label: &#x27;Execute: &#x27; + &#x27;ti &#x27;.yellow + utils.join(tray.dinner).yellow,
+      value: &#x27;execute&#x27;
+    }, {
+      label: &#x27;Save as recipe: &#x27; + utils.join(tray.recipe).yellow,
+      value: &#x27;save&#x27;
+    }, {
+      label: &#x27;Exit&#x27;,
+      value: &#x27;exit&#x27;
+    }]
+  }).prompt(function (err, value) {
+
+    if (err) {
+      console.log();
+      console.error((&#x27;&#x27; + err).red);
+
+    } else if (value === &#x27;execute&#x27;) {
+      eat();
+
+    } else if (value === &#x27;save&#x27;) {
+
+      fields.text({
+        title: &#x27;What do you want to name it?&#x27;,
+        validate: function (value) {
+
+          if (/^([a-z0-9]+(?:-[a-z0-9]+)*)$/i.test(value)) {
+            return true;
+          }
+
+          console.error(&#x27;Error: format as: my-Recipe&#x27;.red);
+
+          return false;
+        }
+      }).prompt(function (err, value) {
+
+        if (err) {
+          console.log();
+          console.error((&#x27;&#x27; + err).red);
+        } else {
+          console.log();
+          recipes.save(value, tray.recipe);
+        }
+
+        process.exit();
+
+      });
+
+    } else {
+      process.exit();
+    }
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.tn.kitchen.cook" id="apidoc.element.tn.kitchen.cook">
+        function <span class="apidocSignatureSpan">tn.kitchen.</span>cook
+        <span class="apidocSignatureSpan">(ingr, opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function cook(ingr, opts) {
+  var pan, i, tray = {};
+
+  opts || (opts = {});
+
+  // no ingredients, no cooking
+  if (!_.isArray(ingr) || ingr.length === 0) {
+    return;
+  }
+
+  // skip help, version and --skip
+  if (_.intersection(ingr, [&#x27;-h&#x27;, &#x27;--help&#x27;, &#x27;-v&#x27;, &#x27;--version&#x27;]).length &#x3e; 0) {
+    return;
+  }
+
+  // don&#x27;t change original object
+  pan = _.clone(ingr);
+
+  // --verbose
+  if ((i = pan.indexOf(&#x27;--verbose&#x27;)) !== -1) {
+
+    // remove
+    pan.splice(i, 1);
+
+    // set flag
+    config.verbose = true;
+
+    // save remainder as original recipe
+    tray.recipe = _.clone(pan);
+  }
+
+  // first ingredient is a command recipe
+  if (pan[0].substr(0, 1) !== &#x27;-&#x27; &#x26;&#x26; recipes.has(pan[0])) {
+    pan[0] = &#x27;--&#x27; + pan[0];
+  }
+
+  function heat(args, doNotOverheat, prefix) {
+    var i, arg, matches, name, value, recipe, before, after;
+
+    i = 0;
+
+    // loop until end
+    while (i &#x3c; args.length) {
+      arg = args[i];
+
+      matches = arg.match(/^--([a-z0-9-]+)$/);
+
+      if (matches) {
+        name = matches[1];
+
+        if (name &#x26;&#x26; recipes.has(name)) {
+
+          // prevent infinite loop
+          if (doNotOverheat &#x26;&#x26; _.contains(doNotOverheat, name)) {
+            // config.verbose &#x26;&#x26; logger.debug(&#x27;Skipped &#x27; + name.cyan + &#x27; recursive recipe&#x27;.white);
+
+          } else {
+
+            // find if next arg is value
+            value = (args[i + 1] &#x26;&#x26; args[i + 1].substr(0, 1) !== &#x27;-&#x27;) ? args[i + 1] : null;
+
+            config.verbose &#x26;&#x26; logger.debug(prefix + &#x27;Cooking &#x27; + name.cyan + &#x27; recipe&#x27;.white + (value ? &#x27; with &#x27; + value.cyan : &#x27;&#x27;) + &#x27; ..&#x27;);
+
+            // replace recipe name (and value) with the args of the recipe
+            recipe = recipes.get(name, value);
+            recipe = heat(recipe, _.union(doNotOverheat || [], [name]), prefix + &#x27;  &#x27;);
+
+            before = args.slice(0, i);
+            after = args.slice(i + (value ? 2 : 1));
+
+            args = before.concat(recipe, after);
+
+            config.verbose &#x26;&#x26; logger.debug(prefix + &#x27;.. into: &#x27;.white + utils.join(before).yellow + &#x27; &#x27; + utils.join(recipe).cyan
+ + &#x27; &#x27; + utils.join(after).yellow);
+
+            // hop over the heated recipe
+            i += recipe.length - 1;
+          }
+        }
+      }
+
+      i++;
+    }
+
+    return args;
+  }
+
+  pan = heat(pan, null, &#x27;&#x27;);
+
+  pan = decorate(pan);
+
+  tray.dinner = pan;
+
+  return tray;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+var kitchen = require(&#x27;./lib/kitchen&#x27;);
+
+exports.parse = function (args) {
+	var tray;
+
+	tray = kitchen.<span class="apidocCodeKeywordSpan">cook</span>(args);
+
+	return tray ? tray.dinner : args;
+};
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.tn.logger" id="apidoc.module.tn.logger">module tn.logger</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.tn.logger.debug" id="apidoc.element.tn.logger.debug">
+        function <span class="apidocSignatureSpan">tn.logger.</span>debug
+        <span class="apidocSignatureSpan">(msg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">debug = function (msg) {
+  console[settings.level || label](settings.color(&#x27;[&#x27; + label.toUpperCase() + &#x27;]&#x27;) + (label.length !== 5 ? (new Array(6 - label.
+length).join(&#x27; &#x27;)) : &#x27;&#x27;) + &#x27; &#x27; + msg);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      if (matches) {
+        name = matches[1];
+
+        if (name &#x26;&#x26; recipes.has(name)) {
+
+          // prevent infinite loop
+          if (doNotOverheat &#x26;&#x26; _.contains(doNotOverheat, name)) {
+// config.verbose &#x26;&#x26; logger.<span class="apidocCodeKeywordSpan">debug</span>(&#x27;Skipped &#x27; + name.cyan + &#x27;
+recursive recipe&#x27;.white);
+
+          } else {
+
+// find if next arg is value
+value = (args[i + 1] &#x26;&#x26; args[i + 1].substr(0, 1) !== &#x27;-&#x27;) ? args[i + 1] : null;
+
+config.verbose &#x26;&#x26; logger.debug(prefix + &#x27;Cooking &#x27; + name.cyan + &#x27; recipe&#x27;.white + (value ? &#x27;
+with &#x27; + value.cyan : &#x27;&#x27;) + &#x27; ..&#x27;);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.tn.logger.error" id="apidoc.element.tn.logger.error">
+        function <span class="apidocSignatureSpan">tn.logger.</span>error
+        <span class="apidocSignatureSpan">(msg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">error = function (msg) {
+  console[settings.level || label](settings.color(&#x27;[&#x27; + label.toUpperCase() + &#x27;]&#x27;) + (label.length !== 5 ? (new Array(6 - label.
+length).join(&#x27; &#x27;)) : &#x27;&#x27;) + &#x27; &#x27; + msg);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+label: &#x27;Exit&#x27;,
+value: &#x27;exit&#x27;
+    }]
+  }).prompt(function (err, value) {
+
+    if (err) {
+console.log();
+console.<span class="apidocCodeKeywordSpan">error</span>((&#x27;&#x27; + err).red);
+
+    } else if (value === &#x27;execute&#x27;) {
+eat();
+
+    } else if (value === &#x27;save&#x27;) {
+
+fields.text({
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.tn.logger.info" id="apidoc.element.tn.logger.info">
+        function <span class="apidocSignatureSpan">tn.logger.</span>info
+        <span class="apidocSignatureSpan">(msg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">info = function (msg) {
+  console[settings.level || label](settings.color(&#x27;[&#x27; + label.toUpperCase() + &#x27;]&#x27;) + (label.length !== 5 ? (new Array(6 - label.
+length).join(&#x27; &#x27;)) : &#x27;&#x27;) + &#x27; &#x27; + msg);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+if (!validateRecipeName(recipe)) {
+  return;
+}
+
+location = location || &#x27;user&#x27;;
+
+if (location == &#x27;project&#x27; &#x26;&#x26; _.has(recipes_project, recipe)) {
+  logger.<span class="apidocCodeKeywordSpan">info</span>(&#x27;Changed existing project recipe&#x27;);
+} else if (location == &#x27;user&#x27; &#x26;&#x26; _.has(recipes_user, recipe)) {
+  logger.info(&#x27;Changed existing user recipe&#x27;);
+} else if (location == &#x27;project&#x27; &#x26;&#x26; _.has(recipes_user, recipe)) {
+  logger.info(&#x27;Saved project recipe, overriding user&#x27;);
+} else if (location === &#x27;project&#x27; &#x26;&#x26; _.has(recipes_system, recipe)) {
+  logger.info(&#x27;Saved project recipe, overriding built-in&#x27;);
+} else if (location === &#x27;user&#x27; &#x26;&#x26; _.has(recipes_system, recipe)) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.tn.logger.ok" id="apidoc.element.tn.logger.ok">
+        function <span class="apidocSignatureSpan">tn.logger.</span>ok
+        <span class="apidocSignatureSpan">(msg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">ok = function (msg) {
+  console[settings.level || label](settings.color(&#x27;[&#x27; + label.toUpperCase() + &#x27;]&#x27;) + (label.length !== 5 ? (new Array(6 - label.
+length).join(&#x27; &#x27;)) : &#x27;&#x27;) + &#x27; &#x27; + msg);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.tn.logger.trace" id="apidoc.element.tn.logger.trace">
+        function <span class="apidocSignatureSpan">tn.logger.</span>trace
+        <span class="apidocSignatureSpan">(msg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">trace = function (msg) {
+  console[settings.level || label](settings.color(&#x27;[&#x27; + label.toUpperCase() + &#x27;]&#x27;) + (label.length !== 5 ? (new Array(6 - label.
+length).join(&#x27; &#x27;)) : &#x27;&#x27;) + &#x27; &#x27; + msg);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.tn.logger.warn" id="apidoc.element.tn.logger.warn">
+        function <span class="apidocSignatureSpan">tn.logger.</span>warn
+        <span class="apidocSignatureSpan">(msg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">warn = function (msg) {
+  console[settings.level || label](settings.color(&#x27;[&#x27; + label.toUpperCase() + &#x27;]&#x27;) + (label.length !== 5 ? (new Array(6 - label.
+length).join(&#x27; &#x27;)) : &#x27;&#x27;) + &#x27; &#x27; + msg);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.tn.main" id="apidoc.module.tn.main">module tn.main</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.tn.main.parse" id="apidoc.element.tn.main.parse">
+        function <span class="apidocSignatureSpan">tn.main.</span>parse
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">parse = function (args) {
+	var tray;
+
+	tray = kitchen.cook(args);
+
+	return tray ? tray.dinner : args;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    if (error) {
+      logger.error(&#x27;Failed to read Titanium info: &#x27; + JSON.stringify([error, stderr]));
+
+    } else {
+
+      console.log();
+
+      var config = JSON.<span class="apidocCodeKeywordSpan">parse</span>(stdout);
+
+      if (config.android) {
+
+        if (config.android.emulators &#x26;&#x26; config.android.emulators.length &#x3e; 0) {
+
+config.android.emulators.forEach(function forEach(dev) {
+  var name = dev.name.toLowerCase().replace(/\.+/g, &#x27;&#x27;).replace(/[^a-z0-9]+/g, &#x27;-&#x27;);
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.tn.parse" id="apidoc.module.tn.parse">module tn.parse</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.tn.parse.parse" id="apidoc.element.tn.parse.parse">
+        function <span class="apidocSignatureSpan">tn.</span>parse
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">parse = function (args) {
+	var tray;
+
+	tray = kitchen.cook(args);
+
+	return tray ? tray.dinner : args;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    if (error) {
+      logger.error(&#x27;Failed to read Titanium info: &#x27; + JSON.stringify([error, stderr]));
+
+    } else {
+
+      console.log();
+
+      var config = JSON.<span class="apidocCodeKeywordSpan">parse</span>(stdout);
+
+      if (config.android) {
+
+        if (config.android.emulators &#x26;&#x26; config.android.emulators.length &#x3e; 0) {
+
+config.android.emulators.forEach(function forEach(dev) {
+  var name = dev.name.toLowerCase().replace(/\.+/g, &#x27;&#x27;).replace(/[^a-z0-9]+/g, &#x27;-&#x27;);
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.tn.recipes" id="apidoc.module.tn.recipes">module tn.recipes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.tn.recipes.get" id="apidoc.element.tn.recipes.get">
+        function <span class="apidocSignatureSpan">tn.recipes.</span>get
+        <span class="apidocSignatureSpan">(name, ingredient)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function get(name, ingredient) {
+  var recipe;
+
+  if (typeof recipes_combined[name] === &#x27;string&#x27;) {
+    recipe = recipes_combined[name].split(&#x27; &#x27;);
+  } else {
+    recipe = recipes_combined[name];
+  }
+
+  if (ingredient) {
+
+    recipe = _.map(recipe, function(val) {
+
+      // TODO: Account for spaces in ingredient (&#x22;ddd ddd&#x22;)
+      return val.replace(&#x27;%s&#x27;, ingredient);
+    });
+  }
+
+  return recipe;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+// find if next arg is value
+value = (args[i + 1] &#x26;&#x26; args[i + 1].substr(0, 1) !== &#x27;-&#x27;) ? args[i + 1] : null;
+
+config.verbose &#x26;&#x26; logger.debug(prefix + &#x27;Cooking &#x27; + name.cyan + &#x27; recipe&#x27;.white + (value ? &#x27;
+with &#x27; + value.cyan : &#x27;&#x27;) + &#x27; ..&#x27;);
+
+// replace recipe name (and value) with the args of the recipe
+recipe = recipes.<span class="apidocCodeKeywordSpan">get</span>(name, value);
+recipe = heat(recipe, _.union(doNotOverheat || [], [name]), prefix + &#x27;  &#x27;);
+
+before = args.slice(0, i);
+after = args.slice(i + (value ? 2 : 1));
+
+args = before.concat(recipe, after);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.tn.recipes.has" id="apidoc.element.tn.recipes.has">
+        function <span class="apidocSignatureSpan">tn.recipes.</span>has
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function has(name) {
+  return _.has(recipes_combined, name);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+config.verbose = true;
+
+// save remainder as original recipe
+tray.recipe = _.clone(pan);
+  }
+
+  // first ingredient is a command recipe
+  if (pan[0].substr(0, 1) !== &#x27;-&#x27; &#x26;&#x26; recipes.<span class="apidocCodeKeywordSpan">has</span>(pan[0])) {
+pan[0] = &#x27;--&#x27; + pan[0];
+  }
+
+  function heat(args, doNotOverheat, prefix) {
+var i, arg, matches, name, value, recipe, before, after;
+
+i = 0;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.tn.recipes.list" id="apidoc.element.tn.recipes.list">
+        function <span class="apidocSignatureSpan">tn.recipes.</span>list
+        <span class="apidocSignatureSpan">(forReadMe)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function list(forReadMe) {
+
+  if (forReadMe) {
+
+    _.each(recipes_system, function(recipe, name) {
+      console.log(&#x27;|&#x27; + name + &#x27;|&#x27; + utils.join(recipe) + &#x27;|&#x27;);
+    });
+
+    return;
+  }
+
+  console.log(&#x27;Recipes defined by: &#x27; + (&#x27;built-in&#x27;.green) + &#x27;, &#x27; + (&#x27;user&#x27;.cyan) + &#x27;, &#x27; + (&#x27;user-override&#x27;.blue) + &#x27;, &#x27; + (&#x27;project
+&#x27;.yellow) + &#x27; and &#x27; + (&#x27;project-override&#x27;.red));
+  console.log();
+
+  var recipes = _.keys(recipes_combined).sort();
+
+  _.each(recipes, function(recipe) {
+    var args = recipes_combined[recipe],
+      color;
+
+    if (_.has(recipes_project, recipe)) {
+      color = _.has(recipes_system, recipe) || _.has(recipes_user, recipe) ? &#x27;red&#x27; : &#x27;yellow&#x27;;
+    } else if (_.has(recipes_user, recipe)) {
+      color = _.has(recipes_system, recipe) ? &#x27;blue&#x27; : &#x27;cyan&#x27;;
+    } else {
+      color = &#x27;green&#x27;;
+    }
+
+    var commands = &#x27;&#x27;;
+
+    if (_.isString(args)) {
+      commands += &#x27; &#x27; + args;
+    } else {
+      commands += utils.join(args);
+    }
+
+    console.log(&#x27;  &#x27; + recipe + &#x27;: &#x27; + commands[color]);
+
+  });
+
+  console.log();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.tn.recipes.remove" id="apidoc.element.tn.recipes.remove">
+        function <span class="apidocSignatureSpan">tn.recipes.</span>remove
+        <span class="apidocSignatureSpan">(recipe, location)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function remove(recipe, location) {
+
+  if (!validateRecipeName(recipe)) {
+    return;
+  }
+
+  location = location || &#x27;user&#x27;;
+
+  if (_.has(recipes_user, recipe) === false &#x26;&#x26; _.has(recipes_project, recipe) === false) {
+    logger.error(&#x27;Unknown user or project recipe: &#x27; + (recipe || &#x27;(none)&#x27;).cyan);
+    return;
+  }
+
+  if (location == &#x27;project&#x27;) {
+    delete recipes_project[recipe];
+    fs.writeFileSync(path_project, JSON.stringify(recipes_project));
+  } else {
+    delete recipes_user[recipe];
+    fs.writeFileSync(path_user, JSON.stringify(recipes_user));
+  }
+
+  recipes_combined = _.extend({}, recipes_system, recipes_user, recipes_project);
+
+  logger.info(&#x27;Removed &#x27; + location + &#x27; recipe: &#x27; + recipe.cyan);
+
+  console.log();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.tn.recipes.rename" id="apidoc.element.tn.recipes.rename">
+        function <span class="apidocSignatureSpan">tn.recipes.</span>rename
+        <span class="apidocSignatureSpan">(oldRecipe, newRecipe, location)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function rename(oldRecipe, newRecipe, location) {
+
+  if (!validateRecipeName(newRecipe)) {
+    return;
+  }
+
+  if (_.has(recipes_user, oldRecipe) === false &#x26;&#x26; _.has(recipes_project, oldRecipe) === false) {
+    logger.error(&#x27;Unknown user or project recipe: &#x27; + oldRecipe.yellow);
+    return;
+  }
+
+  if (location == &#x27;project&#x27;) {
+    recipes_project[newRecipe] = recipes_project[oldRecipe];
+    delete recipes_project[oldRecipe];
+    fs.writeFileSync(path_project, JSON.stringify(recipes_project));
+  } else {
+    recipes_user[newRecipe] = recipes_user[oldRecipe];
+    delete recipes_user[oldRecipe];
+    fs.writeFileSync(path_user, JSON.stringify(recipes_user));
+  }
+
+  logger.info(&#x27;Renamed recipe: &#x27; + oldRecipe.yellow + &#x27; &#x3e; &#x27; + newRecipe.yellow);
+  recipes_combined = _.extend({}, recipes_system, recipes_user);
+
+  console.log();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.tn.recipes.reset" id="apidoc.element.tn.recipes.reset">
+        function <span class="apidocSignatureSpan">tn.recipes.</span>reset
+        <span class="apidocSignatureSpan">(location)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function reset(location) {
+
+  if (location == &#x27;project&#x27;) {
+    fs.unlinkSync(path_project);
+    logger.info(&#x27;Reset project recipes&#x27;);
+  } else {
+    fs.unlinkSync(path_user);
+    logger.info(&#x27;Reset user recipes&#x27;);
+  }
+
+  console.log();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.tn.recipes.save" id="apidoc.element.tn.recipes.save">
+        function <span class="apidocSignatureSpan">tn.recipes.</span>save
+        <span class="apidocSignatureSpan">(recipe, args, location)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function save(recipe, args, location) {
+
+  if (!validateRecipeName(recipe)) {
+    return;
+  }
+
+  location = location || &#x27;user&#x27;;
+
+  if (location == &#x27;project&#x27; &#x26;&#x26; _.has(recipes_project, recipe)) {
+    logger.info(&#x27;Changed existing project recipe&#x27;);
+  } else if (location == &#x27;user&#x27; &#x26;&#x26; _.has(recipes_user, recipe)) {
+    logger.info(&#x27;Changed existing user recipe&#x27;);
+  } else if (location == &#x27;project&#x27; &#x26;&#x26; _.has(recipes_user, recipe)) {
+    logger.info(&#x27;Saved project recipe, overriding user&#x27;);
+  } else if (location === &#x27;project&#x27; &#x26;&#x26; _.has(recipes_system, recipe)) {
+    logger.info(&#x27;Saved project recipe, overriding built-in&#x27;);
+  } else if (location === &#x27;user&#x27; &#x26;&#x26; _.has(recipes_system, recipe)) {
+    logger.info(&#x27;Saved user recipe, overriding built-in&#x27;);
+  } else {
+    logger.info(&#x27;Saved &#x27; + location + &#x27; recipe&#x27;);
+  }
+
+  if (location == &#x27;project&#x27;) {
+    recipes_combined[recipe] = recipes_project[recipe] = args;
+    fs.writeFileSync(path_project, JSON.stringify(recipes_project));
+  } else {
+    recipes_combined[recipe] = recipes_user[recipe] = args;
+    fs.writeFileSync(path_user, JSON.stringify(recipes_user));
+  }
+
+  var clr;
+
+  if (_.has(recipes_project, recipe)) {
+    clr = _.has(recipes_system, recipe) || _.has(recipes_user, recipe) ? &#x27;red&#x27; : &#x27;yellow&#x27;;
+  } else if (_.has(recipes_user, recipe)) {
+    clr = _.has(recipes_system, recipe) ? &#x27;blue&#x27; : &#x27;cyan&#x27;;
+  } else {
+    clr = &#x27;green&#x27;;
+  }
+
+  console.log();
+  console.log(&#x27;  &#x27; + recipe + &#x27;: &#x27; + utils.join(args)[clr]);
+
+  console.log();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  }).prompt(function (err, value) {
+
+    if (err) {
+      console.log();
+      console.error((&#x27;&#x27; + err).red);
+    } else {
+      console.log();
+      recipes.<span class="apidocCodeKeywordSpan">save</span>(value, tray.recipe);
+    }
+
+    process.exit();
+
+  });
+
+} else {
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.tn.setup" id="apidoc.module.tn.setup">module tn.setup</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.tn.setup.generate" id="apidoc.element.tn.setup.generate">
+        function <span class="apidocSignatureSpan">tn.setup.</span>generate
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function generate() {
+
+  logger.info(&#x27;Looking up connected devices, emulators and simulators..&#x27;);
+
+  compat.ti([&#x27;info&#x27;, &#x27;-o&#x27;, &#x27;json&#x27;], function process(error, stdout, stderr) { // jshint unused: false
+
+    if (error) {
+      logger.error(&#x27;Failed to read Titanium info: &#x27; + JSON.stringify([error, stderr]));
+
+    } else {
+
+      console.log();
+
+      var config = JSON.parse(stdout);
+
+      if (config.android) {
+
+        if (config.android.emulators &#x26;&#x26; config.android.emulators.length &#x3e; 0) {
+
+          config.android.emulators.forEach(function forEach(dev) {
+            var name = dev.name.toLowerCase().replace(/\.+/g, &#x27;&#x27;).replace(/[^a-z0-9]+/g, &#x27;-&#x27;);
+            var recipe = [&#x27;--android&#x27;, &#x27;--emulator&#x27;, &#x27;--device-id&#x27;, dev.name];
+
+            if (!recipes.has(name) || !arraysIdentical(recipes.get(name), recipe)) {
+              recipes.save(name, recipe);
+            }
+          });
+        }
+
+        if (config.android.devices &#x26;&#x26; config.android.devices.length &#x3e; 0) {
+
+          config.android.devices.forEach(function forEach(dev) {
+            var name = dev.name.toLowerCase().replace(/\.+/g, &#x27;&#x27;).replace(/[^a-z0-9]+/g, &#x27;-&#x27;);
+            var recipe = [&#x27;--android&#x27;, &#x27;--device&#x27;, &#x27;--device-id&#x27;, dev.id];
+
+            if (!recipes.has(name) || !arraysIdentical(recipes.get(name), recipe)) {
+              recipes.save(name, recipe);
+            }
+          });
+        }
+      }
+
+      if (config.ios) {
+
+        if (config.ios.devices &#x26;&#x26; config.ios.devices.length &#x3e; 0) {
+
+          config.ios.devices.forEach(function forEach(dev) {
+
+            if (dev.udid === &#x27;itunes&#x27;) {
+              return;
+            }
+
+            var name = dev.name.toLowerCase().replace(/[^a-z0-9]+/g, &#x27;-&#x27;);
+            var recipe = [&#x27;--ios&#x27;, &#x27;--device&#x27;, &#x27;--device-id&#x27;, dev.udid];
+
+            if (!recipes.has(name) || !arraysIdentical(recipes.get(name), recipe)) {
+              recipes.save(name, recipe);
+            }
+          });
+        }
+
+        if (config.ios.simulators) {
+          var version, versions = [];
+
+          // Ti 5.0 has a ios and watch object
+          var iosSims = config.ios.simulators.ios ? config.ios.simulators.ios : config.ios.simulators;
+
+          for (version in iosSims) {
+            versions.push(version);
+          }
+
+          // we want newest versoon first
+          versions.sort();
+          versions.reverse();
+
+          versions.forEach(function forEach(version) {
+
+            iosSims[version].forEach(function forEach(dev) {
+              var name = dev.name.toLowerCase().replace(/[^a-z0-9]+/g, &#x27;-&#x27;);
+              var recipe = [&#x27;--ios&#x27;, &#x27;--simulator&#x27;, &#x27;--device-id&#x27;, dev.udid];
+
+              if (recipes.has(name) &#x26;&#x26; versions[0] !== version) {
+                name = name + &#x27;-ios&#x27; + version.replace(/\./, &#x27;&#x27;);
+              }
+
+              if (!recipes.has(name) || !arraysIdentical(recipes.get(name), recipe)) {
+                recipes.save(name, recipe);
+              }
+            });
+
+          });
+        }
+      }
+
+      logger.info(&#x27;Done&#x27;);
+    }
+
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.tn.setup.uninstall" id="apidoc.element.tn.setup.uninstall">
+        function <span class="apidocSignatureSpan">tn.setup.</span>uninstall
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function uninstall() {
+  logger.info(&#x27;Uninstalling the old 2.x Titanium CLI hook..\n&#x27;);
+
+  compat.ti([&#x27;config&#x27;, &#x27;paths.hooks&#x27;, &#x27;--remove&#x27;, PATH], {
+    stdio: &#x27;inherit&#x27;
+  }, function () {});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.tn.utils" id="apidoc.module.tn.utils">module tn.utils</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.tn.utils.join" id="apidoc.element.tn.utils.join">
+        function <span class="apidocSignatureSpan">tn.utils.</span>join
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function join(args) {
+  var joined = &#x27;&#x27;;
+
+  _.each(args, function(arg) {
+
+    // has space
+    if (arg.indexOf(&#x27; &#x27;) !== -1) {
+      joined += &#x27; &#x22;&#x27; + arg + &#x27;&#x22;&#x27;;
+    } else {
+      joined += &#x27; &#x27; + arg;
+    }
+
+  });
+
+  joined = joined.substr(1);
+
+  return joined;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      recipe = heat(recipe, _.union(doNotOverheat || [], [name]), prefix + &#x27;  &#x27;);
+
+      before = args.slice(0, i);
+      after = args.slice(i + (value ? 2 : 1));
+
+      args = before.concat(recipe, after);
+
+      config.verbose &#x26;&#x26; logger.debug(prefix + &#x27;.. into: &#x27;.white + utils.<span class="apidocCodeKeywordSpan">
+join</span>(before).yellow + &#x27; &#x27; + utils.join(recipe).cyan + &#x27; &#x27; + utils.join(after).yellow);
+
+      // hop over the heated recipe
+      i += recipe.length - 1;
+    }
+  }
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
