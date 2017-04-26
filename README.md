@@ -1,6 +1,6 @@
 # npmdoc-tn
 
-#### api documentation for  [tn (v4.2.0)](http://fokkezb.nl/tag/tiny)  [![npm package](https://img.shields.io/npm/v/npmdoc-tn.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-tn) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-tn.svg)](https://travis-ci.org/npmdoc/node-npmdoc-tn)
+#### basic api documentation for  [tn (v4.2.0)](http://fokkezb.nl/tag/tiny)  [![npm package](https://img.shields.io/npm/v/npmdoc-tn.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-tn) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-tn.svg)](https://travis-ci.org/npmdoc/node-npmdoc-tn)
 
 #### Appcelerator & Titanium CLI wrapper to save you keystrokes.
 
